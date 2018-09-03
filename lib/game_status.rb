@@ -55,6 +55,7 @@ end
      return true
    end
  end
+ end
 
 def winner(board)
   array = won?(board)
