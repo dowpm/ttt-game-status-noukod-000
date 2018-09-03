@@ -48,9 +48,9 @@ def  draw?(board)
 end
 
  def over?(board)
-   if draw?(board) == true    #if draw is true tes if there's empty index
-     return !board.any? {|index| index == " "}
-   end
+   if full?(board) == false
+     return false
+   else
    if draw?(board) == true or won?(board) != false
      return true
    end
